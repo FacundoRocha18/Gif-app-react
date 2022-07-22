@@ -1,0 +1,287 @@
+html {
+  background-image: url('../img/Hình-nền-background-vector-scaled.jpg');
+  background-position: center;
+  background-size: auto;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+:root {
+
+  /* Colors */
+
+  --dark-grey: #242424;
+  --transparent-dark-grey: #2424247e;
+  --black: #000;
+  --purple: #6f66ff;
+  --transparent-purple: #6257ff4d;
+  --green: rgba(18, 199, 127, 0.75);
+  --green-lighter: rgb(8, 238, 146);
+  --green-hover: rgba(12, 223, 138, 0.75);
+  --red-background: rgba(226, 43, 43, 0.75);
+  --red-background-hover: rgba(226, 22, 22, 0.75);
+  --red-border: rgb(226, 43, 43);
+}
+
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection {
+  background-color: var(--purple);
+  color: var(--green-lighter);
+}
+
+body {
+  background-color: var(--transparent-dark-grey);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  line-height: 1.75;
+  min-height: 100%;
+  margin: 0;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400');
+
+html {font-size: 100%;} /*16px*/
+
+p {margin-bottom: 1rem;}
+
+h1, h2, h3, h4, h5 {
+  color: var(--green-lighter);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 2.5rem;
+}
+
+h2 {font-size: 2.441rem;}
+
+h3 {font-size: 1.953rem;}
+
+h4 {font-size: 1.563rem;}
+
+h5 {font-size: 1.25rem;}
+
+small, .text_small {font-size: 0.8rem;}
+
+
+.main-container {
+  align-items: center;
+  background-color: var(--transparent-dark-grey);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: solid 2px var(--dark-grey);
+  border-radius: 20px;
+  flex-direction: column;
+  display: flex;
+  height: fit-content;
+  padding: 20px;
+  margin: 50px auto;
+  width: 80%;
+}
+
+form {
+  width: 100%;
+}
+
+.form-group-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+.form-group-container input:not([type="submit"]) {
+  background-color: var(--transparent-dark-grey);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: solid 1px var(--dark-grey);
+  border-right: none;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  color: #fff;
+  inline-size: 100%;
+  padding: 10px 15px;
+}
+
+.submit-button {
+  background: var(--green);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgb(4, 254, 154);
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+  color: var(--dark-grey);
+  inline-size: auto;
+  height: 100%;
+  padding: 10px 15px;
+  transition: all .5s ease;
+}
+
+.submit-button:hover {
+  background-color: var(--green-hover);
+}
+
+.grid-container {
+  width: 100%;
+}
+
+
+.gif-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  margin: 35px auto;
+}
+
+.gif-grid-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete-category-button {
+  background: var(--red-background);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--red-border);
+  cursor: pointer;
+  padding: 7px 10px;
+  transition: all .5s ease;
+}
+
+.delete-category-button:hover {
+  background: var(--red-background-hover);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--red-border);
+}
+
+.card {
+  background-color: var(--transparent-purple);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: solid 1px var(--transparent-purple);
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+  padding: 0px;
+  width: 100%;
+  transition: all .5s ease;
+}
+
+.card-image {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.card-image img {
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.card-header {
+  padding: 20px;
+}
+
+.card:hover {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  transform: translateY(-25px);
+}
+
+.loading-container {
+  align-items: center;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 10rem;
+  width: 10rem;
+  margin: 15rem auto;
+  z-index: 1000;
+}
+
+.loading-spinner {
+  animation: spinner 4s linear infinite;
+  border: solid 3px var(--dark-grey);
+  border-top: solid 3px var(--green);
+  border-radius: 5rem;
+  height: 5rem;
+  width: 5rem;
+  z-index: 1000;
+}
+
+@keyframes spinner {
+
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+
+}
+
+
+@media (min-width: 768px) {
+  .main-container {
+    width: 90%;
+  }
+
+  .gif-grid-header {
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .gif-grid {
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+}
+
+/* Google Material Design Icons Size */
+
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}
